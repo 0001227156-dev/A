@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Questionário</h1>
+    <p>HTML, CSS e JavaScript</p>
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" placeholder="Digite seu nome">
+
+    <form id="questionario">
+
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Pergunta</th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Qual linguagem estrutura uma página?</td>
+                <td><label><input type="radio" name="q1" value="0"> CSS</label></td>
+                <td><label><input type="radio" name="q1" value="1"> HTML</label></td>
+                <td><label><input type="radio" name="q1" value="0"> JS</label></td>
+                <td><label><input type="radio" name="q1" value="0"> PHP</label></td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Qual linguagem estiliza páginas?</td>
+                <td><label><input type="radio" name="q2" value="1"> CSS</label></td>
+                <td><label><input type="radio" name="q2" value="0"> HTML</label></td>
+                <td><label><input type="radio" name="q2" value="0"> JS</label></td>
+                <td><label><input type="radio" name="q2" value="0"> SQL</label></td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Qual linguagem cria interatividade?</td>
+                <td><label><input type="radio" name="q3" value="0"> HTML</label></td>
+                <td><label><input type="radio" name="q3" value="0"> CSS</label></td>
+                <td><label><input type="radio" name="q3" value="1"> JavaScript</label></td>
+                <td><label><input type="radio" name="q3" value="0"> PHP</label></td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Qual tag cria o título principal?</td>
+                <td><label><input type="radio" name="q4" value="0">&lt;p&gt;</label></td>
+                <td><label><input type="radio" name="q4" value="1">&lt;h1&gt;</label></td>
+                <td><label><input type="radio" name="q4" value="0">&lt;div&gt;</label></td>
+                <td><label><input type="radio" name="q4" value="0">&lt;span&gt;</label></td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>Qual propriedade muda a cor do texto?</td>
+                <td><label><input type="radio" name="q5" value="0"> background</label></td>
+                <td><label><input type="radio" name="q5" value="0"> border</label></td>
+                <td><label><input type="radio" name="q5" value="1"> color</label></td>
+                <td><label><input type="radio" name="q5" value="0"> display</label></td>
+            </tr>
+        </table>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <div id="resultado"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
